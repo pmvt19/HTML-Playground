@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+#heading {
+    color: red;
+    text-align: center;
+
+}
+#heading2{
+    color: blue;
+}
+#button1{
+    background-color: blue;
+    color: red;
+}
+a:visted{
+    color:green;
+}
+#link1:hover{
+    color: red;
+
+}
+#password{
+    margin-left: 4px;
+}

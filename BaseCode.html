@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="TheCSS.css">
+</head>
+
+<script src="JavaScript.js"></script>
+<body id=body>
+
+    <h1 id = "heading">This is a Heading</h1>
+    <h2 id = "heading2">This is a Heading but a second heading</h2>
+    <button id = "button1" type="button" onclick="document.getElementById('test').innerHTML = oscillate(); changeLink('test')">Click Me!</button>
+    <p id = "test">This is a paragraph.</p>
+    First Name: <input id = "firstName" type="text" name="fname" value = "9"><br>
+    Last Name: <input id = "lastName" type="text" name="lname"><br>
+    <button id = "happyButton" type="button" onclick= "document.getElementById('test2').innerHTML = grabText('firstName')">Click Me!</button>
+    <p id = "test2"></p>
+    <br><br>osfj
+    <button type="button" onclick = "setText('test3', addition(document.getElementById('firstName').value,document.getElementById('lastName').value))">Click Me</button>
+    <button type="button" onclick = "conditional('test3')">Click Me</button>
+    <p id = "test3"></p>
+    <a id = "links" href="https://www.google.com">Go to Google</a>
+    <br><br><br>
+    <p>Set Site Background Color</p>
+    <input type = "radio" name = "option" value = "Option 1" onclick = "document.getElementById('body').style.backgroundColor = 'lightgreen'">Green<br>
+    <input type = "radio" name = "option" value = "Option 2" onclick = "document.getElementById('body').style.backgroundColor = 'lightblue'">Blue<br>
+    <input type = "radio" name = "option" value = "Option 3" onclick = "document.getElementById('body').style.backgroundColor = 'pink'">Pink<br>
+    <br>
+    <br>
+    Seconds since load: <p id = "seconds"> <p>
+    <br>
+    <br>
+    <br><br>
+    <button id = "countBtn" type="button" onclick="setInterval(counting, 1000)">Count!</button><br>
+    <button id = "turtleBtn" type="button" onclick="mystery('body')">Mystery</button>
+    <button id = "colorBtn" type="button" onclick="changeHeadingColor('pink')">Colorful</button>
+    <button id = "autoBtn" type="button" onclick="autofill()">Autofill</button>
+    <button id = "autoBtn" type="button" onclick="toggleJustify('heading2')">Justify</button>
+    <button id = "autoBtn" type="button" onclick="setInterval(fixStuckPixel, 1000)">Don't Press</button>
+    <br>
+    <a id = "link1" href="https://www.apple.com/mac/">Go to Apple</a>
+    <a id = "link2" href="https://www.microsoft.com">Go to Microsoft</a>
+    <a id = "link3" href="https://www.google.com">Go to Google</a><br><br>
+    Username: <input id = "username" type="text" name="uname"><br><br>
+    Password: <input id = "password" type="password" name="pass"><br>
+    <button id = "authBtn" type="button" onclick="loginCheck()">Login</button>
+    <button id = "authBtn" type="button" onclick="loginCheck()">Create Account</button>
+
+</body>
+</html>
